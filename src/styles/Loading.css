@@ -1,0 +1,46 @@
+/* ── Loading state ── */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  color: #555;
+}
+
+.loading-state__spinner {
+  width: 40px;
+  height: 40px;
+}
+
+.loading-state__message {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: #777;
+}
+
+/* ── Error message ── */
+.error-message {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-left: 3px solid #111;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.error-message__icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.05rem;
+}
+
+.error-message__text {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.5;
+}

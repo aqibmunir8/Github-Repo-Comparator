@@ -1,0 +1,127 @@
+/* ── Side-by-side repo cards ── */
+.repo-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .repo-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Single card ── */
+.repo-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Card header: avatar + name */
+.repo-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.repo-card__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.repo-card__name-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.repo-card__full-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.repo-card__link {
+  font-size: 0.75rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.repo-card__link:hover {
+  text-decoration: underline;
+  color: #111;
+}
+
+/* Description */
+.repo-card__description {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.55;
+}
+
+/* Stats grid */
+.repo-card__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.repo-card__stat {
+  background: #f5f5f5;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 0.55rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.repo-card__stat-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.repo-card__stat-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Meta row: language, license, dates */
+.repo-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.repo-card__tag {
+  font-size: 0.72rem;
+  font-weight: 500;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 0.2rem 0.55rem;
+  color: #444;
+}
+
+/* "Winner" highlight — the card with higher stars gets a subtle top border */
+.repo-card--winner {
+  border-top: 3px solid #111;
+}

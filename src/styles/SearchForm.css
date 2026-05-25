@@ -1,0 +1,106 @@
+/* ── Search / compare form ── */
+.search-form {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.search-form__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .search-form__fields {
+    grid-template-columns: 1fr;
+  }
+}
+
+.search-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.search-form__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.search-form__input {
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #111;
+  background: #fafafa;
+  transition: border-color 0.15s;
+  outline: none;
+}
+
+.search-form__input:focus {
+  border-color: #111;
+  background: #fff;
+}
+
+.search-form__input::placeholder {
+  color: #bbb;
+}
+
+/* ── Action buttons row ── */
+.search-form__actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s, color 0.15s;
+  letter-spacing: 0.03em;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Primary — black fill */
+.btn--primary {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.btn--primary:hover:not(:disabled) {
+  background: #333;
+}
+
+/* Secondary — outlined */
+.btn--secondary {
+  background: #fff;
+  color: #111;
+  border-color: #bbb;
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: #f0f0f0;
+}
+
+.search-form__hint {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.75rem;
+}
