@@ -7,7 +7,10 @@ Follow these steps to set up and run the project locally on a fresh machine.
 ### Prerequisites
 
 - **Node.js** (includes `npm`)
+- **Git**
 - **A Code Editor** (e.g., VS Code)
+
+
 
 ### Setup Instructions
 
